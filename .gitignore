@@ -3,6 +3,9 @@
 .idea/
 .ipr
 .iws
+*.d.ts
+*.js
+*.jsx
 *~
 ~*
 *.diff

@@ -1,0 +1,17 @@
+{
+  "name": "tokrak-antd-editable",
+  "version": "3.0.0",
+  "homepage": "http://github.com/Alkaids/antd-editable",
+  "repository": "https://github.com/woodrow-wang/tokrak-react-cron.git",
+  "author": "jinxin0112 <18508218948@163.com>",
+  "bugs": {
+    "url": "http://github.com/Alkaids/antd-editable/issues"
+  },
+  "license": "MIT",
+  "main": "./lib/index",
+  "module": "./es/index",
+  "files": [
+    "es",
+    "lib"
+  ]
+}

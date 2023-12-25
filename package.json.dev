@@ -32,6 +32,7 @@
     "pub": "rc-tools run pub --babel-runtime",
     "test": "rc-tools run test",
     "prepublish": "rc-tools run guard",
+    "pre-commit": "rc-tools run pre-commit",
     "coverage": "rc-tools run test --coverage",
     "lint": "rc-tools run lint",
     "lint:fix": "rc-tools run lint --fix",
@@ -54,7 +55,7 @@
     "rc-tools": "^9.5.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "typescript": "^5.3.3"
+    "typescript": "^3.4.4"
   },
   "babel": {
     "plugins": [
