@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const EditableWrapper = styled.div`
-  .metro-editable {
+  .tokrak-editable {
     table {
       table-layout: fixed;
 
@@ -21,7 +21,7 @@ export const EditableWrapper = styled.div`
         }
       }
 
-      .metro-editable-row {
+      .tokrak-editable-row {
         .editable-cell-uneditable {
           padding: 5px 12px;
         }

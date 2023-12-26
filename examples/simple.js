@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Editable from '../src';
+import EditableWrapper from '../src/style/EditableWrapper';
 
 const warraperStyle = {
   width: 600,
@@ -58,12 +59,14 @@ function App() {
   return (
     <div style={warraperStyle}>
       <h3>antd-editable</h3>
-      <Editable
-        dataSource={dataSource}
-        columns={columns}
-        bordered
-        onCellChange={handleTableChange}
-      />
+      <EditableWrapper>
+        <Editable
+          dataSource={dataSource}
+          columns={columns}
+          bordered
+          onCellChange={handleTableChange}
+        />
+      </EditableWrapper>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import Editable from '../src/index';
+import EditableWrapper from '../src/style/EditableWrapper';
 
 const warraperStyle = {
   width: 600,
@@ -81,13 +82,15 @@ function App() {
   return (
     <div style={warraperStyle}>
       <h3>异步数据加载(延迟3s)</h3>
-      <Editable
-        bordered
-        dataSource={dataSource}
-        columns={columns}
-        loading={loading}
-        onCellChange={handleCellChange}
-      />
+      <EditableWrapper>
+        <Editable
+          bordered
+          dataSource={dataSource}
+          columns={columns}
+          loading={loading}
+          onCellChange={handleCellChange}
+        />
+      </EditableWrapper>
     </div>
   );
 }

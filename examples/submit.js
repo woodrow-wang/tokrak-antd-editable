@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Editable from '../src';
+import EditableWrapper from '../src/style/EditableWrapper';
 
 const warraperStyle = {
   width: 600,
@@ -58,7 +59,9 @@ function App() {
   return (
     <div style={warraperStyle}>
       <h3>使用onSubmit提交</h3>
-      <Editable dataSource={dataSource} columns={columns} bordered onSubmit={handleSubmit} />
+      <EditableWrapper>
+        <Editable dataSource={dataSource} columns={columns} bordered onSubmit={handleSubmit} />
+      </EditableWrapper>
     </div>
   );
 }

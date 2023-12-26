@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Editable from '../src/index';
+import EditableWrapper from '../src/style/EditableWrapper';
 
 const warraperStyle = {
   width: 600,
@@ -70,12 +71,14 @@ function App() {
   return (
     <div style={warraperStyle}>
       <h3>列数据校验</h3>
-      <Editable
-        dataSource={dataSource}
-        columns={columns}
-        bordered
-        onCellChange={handleCellChange}
-      />
+      <EditableWrapper>
+        <Editable
+          dataSource={dataSource}
+          columns={columns}
+          bordered
+          onCellChange={handleCellChange}
+        />
+      </EditableWrapper>
     </div>
   );
 }

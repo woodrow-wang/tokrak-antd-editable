@@ -6,7 +6,7 @@ import { TableProps, ColumnProps } from 'antd/lib/table';
 
 import useProps from './useProps';
 
-import EditableWrapper from './style/EditableWrapper';
+// import EditableWrapper from './style/EditableWrapper';
 interface IDataEditable {
   disabled: string[];
 }
@@ -60,12 +60,13 @@ const Editable: React.FC<EditableProps<IDataSource>> = ({
   }
 
   return (
-    <EditableWrapper>
+    // <EditableWrapper>
+    <>
       <Table
-        className="metro-editable"
+        className="tokrak-editable"
         dataSource={cacheSource}
         columns={editColumns}
-        rowClassName={() => 'metro-editable-row'}
+        rowClassName={() => 'tokrak-editable-row'}
         pagination={pagination || false}
         {...resProps}
       />
@@ -73,13 +74,14 @@ const Editable: React.FC<EditableProps<IDataSource>> = ({
         <Button
           onClick={handleSubmit}
           disabled={hasError}
-          className="metro-editable-submitBtn"
+          // className="tokrak-editable-submitBtn"
           {...btnProps}
         >
           {btnText}
         </Button>
       )}
-    </EditableWrapper>
+    </>
+    // </EditableWrapper>
   );
 };
 
