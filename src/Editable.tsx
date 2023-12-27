@@ -74,7 +74,7 @@ const Editable: React.FC<EditableProps<IDataSource>> = ({
         <Button
           onClick={handleSubmit}
           disabled={hasError}
-          // className="tokrak-editable-submitBtn"
+          className="tokrak-editable-submitBtn"
           {...btnProps}
         >
           {btnText}
