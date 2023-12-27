@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Editable from '../src';
-import EditableWrapper from '../src/style/EditableWrapper';
+import EditableWrapper from '../style/EditableWrapper';
 
 const warraperStyle = {
   width: 600,
